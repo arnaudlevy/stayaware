@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+git clone git@github.com:arnaudlevy/stayaware.git
+rails new stayaware -d postgresql
+cd stayaware/
+rails s
+rails db:create # Si erreur
+git status
+git add .
+git commit -am "init"
+git push
+rails g scaffold Site name:string url:string
+rails db:migrate
+git status
+git add .
+git commit -am "sites"
+git push
+```
