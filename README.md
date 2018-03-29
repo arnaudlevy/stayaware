@@ -18,7 +18,7 @@ git commit -am "sites"
 git push
 ```
 
-Création de l'app sur Heroku, puis:
+Création de l'app sur Heroku, installation du CLI puis:
 ```
 heroku git:remote -a stayaware
 git push heroku master
