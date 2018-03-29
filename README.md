@@ -17,3 +17,10 @@ git add .
 git commit -am "sites"
 git push
 ```
+
+Création de l'app sur Heroku, puis:
+```
+heroku git:remote -a stayaware
+git push heroku master
+heroku run rails db:migrate
+```
